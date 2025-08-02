@@ -1,0 +1,61 @@
+---
+import DashboardLayout from '../../layouts/DashboardLayout.astro';
+---
+
+<DashboardLayout title="Dashboard">
+  <h1 class="page-title">Faturas Recentes</h1>
+  <table class="invoice-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Cliente</th>
+        <th>Valor</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>Empresa Alpha</td>
+        <td>R$ 1.200,00</td>
+        <td>Pendente</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>Studio Beta</td>
+        <td>R$ 850,00</td>
+        <td>Pago</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>Loja Gama</td>
+        <td>R$ 430,00</td>
+        <td>Atrasado</td>
+      </tr>
+    </tbody>
+  </table>
+</DashboardLayout>
+
+<style>
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .invoice-table th,
+  .invoice-table td {
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+  .invoice-table th {
+    background-color: #f9fafb;
+    font-weight: 600;
+  }
+</style>
