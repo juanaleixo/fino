@@ -1,6 +1,7 @@
 # Fino
 
-Projeto web moderno construído com **Astro 4.x** e **TypeScript**, focado em performance, SEO e experiência do usuário.
+Landing page para a **Plataforma de Faturamento e Cobrança Automática**.
+Construído com **Astro 4.x** e **TypeScript**, priorizando performance e SEO.
 
 ## 🚀 Características
 
