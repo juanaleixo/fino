@@ -1,6 +1,6 @@
 # Fino
 
-Projeto web moderno construído com **Astro 4.x** e **TypeScript**, focado em performance, SEO e experiência do usuário.
+Plataforma de faturamento e cobrança automática para pequenos negócios, construída com **Astro 4.x** e **TypeScript**.
 
 ## 🚀 Características
 
@@ -27,15 +27,15 @@ npm run dev
 
 ## 🛠️ Scripts Disponíveis
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Inicia o servidor de desenvolvimento |
-| `npm run build` | Gera build de produção |
-| `npm run preview` | Visualiza o build de produção localmente |
-| `npm run format` | Formata o código com Prettier |
-| `npm run test` | Executa testes unitários |
-| `npm run test:ui` | Executa testes com interface visual |
-| `npm run test:e2e` | Executa testes end-to-end |
+| Comando            | Descrição                                |
+| ------------------ | ---------------------------------------- |
+| `npm run dev`      | Inicia o servidor de desenvolvimento     |
+| `npm run build`    | Gera build de produção                   |
+| `npm run preview`  | Visualiza o build de produção localmente |
+| `npm run format`   | Formata o código com Prettier            |
+| `npm run test`     | Executa testes unitários                 |
+| `npm run test:ui`  | Executa testes com interface visual      |
+| `npm run test:e2e` | Executa testes end-to-end                |
 
 ## 🎨 Tailwind CSS
 
@@ -61,9 +61,11 @@ fino/
 ## 🚀 Deploy
 
 ### GitHub Pages (Automático)
+
 O projeto está configurado para deploy automático no GitHub Pages através do GitHub Actions.
 
 ### Netlify (Opcional)
+
 Para deploy no Netlify:
 
 1. Configure as variáveis de ambiente no GitHub:
@@ -86,4 +88,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ---
 
-Desenvolvido com ❤️ usando [Astro](https://astro.build) 
+Desenvolvido com ❤️ usando [Astro](https://astro.build)
