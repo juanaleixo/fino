@@ -2,28 +2,19 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Fino - Performance e SEO">
+<BaseLayout title="Fino - Plataforma de Faturamento">
   <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
         <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-          Bem-vindo ao <span class="text-blue-600">Fino</span>
+          Fature e cobre automaticamente com <span class="text-blue-600">Fino</span>
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Projeto web moderno construído com Astro 4.x, focado em performance, SEO e experiência do usuário.
+          Simplifique suas cobranças e receba em dia. Emita faturas, envie lembretes e integre com os principais meios de pagamento.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="/sobre"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
-          >
-            Saiba Mais
-          </a>
-          <a
-            href="/contato"
-            class="border border-blue-600 text-blue-600 hover:bg-blue-50 font-semibold py-3 px-8 rounded-lg transition-colors"
-          >
-            Entre em Contato
+          <a href="#planos" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+            Quero experimentar
           </a>
         </div>
       </div>
@@ -36,37 +27,65 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="text-center">
           <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l2-2 4 4m0 0l6-6m-6 6V8" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">Performance</h3>
-          <p class="text-gray-600">
-            Otimizado para velocidade com Astro e técnicas modernas de web performance.
-          </p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Faturas rápidas</h3>
+          <p class="text-gray-600">Gere faturas personalizadas em segundos.</p>
         </div>
-        
+
         <div class="text-center">
           <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">SEO</h3>
-          <p class="text-gray-600">
-            Estrutura otimizada para motores de busca com metadados e semântica adequada.
-          </p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Lembretes automáticos</h3>
+          <p class="text-gray-600">Envie cobranças por e-mail ou WhatsApp automaticamente.</p>
         </div>
-        
+
         <div class="text-center">
           <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2v4a2 2 0 004 0v-4c0-1.1-.9-2-2-2zM6 18v-5a6 6 0 1112 0v5" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">Responsivo</h3>
-          <p class="text-gray-600">
-            Design adaptável que funciona perfeitamente em todos os dispositivos.
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Integração com pagamentos</h3>
+          <p class="text-gray-600">Conecte Stripe, PayPal, Mercado Pago ou PIX.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Planos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Básico</h3>
+          <p class="text-blue-600 text-3xl font-bold mb-4">
+            US$9<span class="text-base font-normal">/mês</span>
           </p>
+          <p class="text-gray-600 mb-4">Até 50 faturas mensais</p>
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Assinar</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Intermediário</h3>
+          <p class="text-blue-600 text-3xl font-bold mb-4">
+            US$19<span class="text-base font-normal">/mês</span>
+          </p>
+          <p class="text-gray-600 mb-4">Até 200 faturas + WhatsApp</p>
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Assinar</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Avançado</h3>
+          <p class="text-blue-600 text-3xl font-bold mb-4">
+            US$49<span class="text-base font-normal">/mês</span>
+          </p>
+          <p class="text-gray-600 mb-4">Faturas ilimitadas e multi-usuário</p>
+          <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors">Assinar</a>
         </div>
       </div>
     </div>
@@ -74,256 +93,68 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-  /* Estilos inline para funcionar sem Tailwind */
+  /* Minimal styles for Tailwind-like classes */
   .bg-gradient-to-br {
     background: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
   }
-  
-  .from-blue-50 {
-    background-color: #eff6ff;
-  }
-  
-  .to-indigo-100 {
-    background-color: #e0e7ff;
-  }
-  
-  .py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  
-  .max-w-7xl {
-    max-width: 80rem;
-  }
-  
-  .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  
-  .sm\\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  
-  .lg\\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-  
-  .md\\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-  
-  .font-bold {
-    font-weight: 700;
-  }
-  
-  .text-gray-900 {
-    color: #111827;
-  }
-  
-  .mb-6 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .text-blue-600 {
-    color: #2563eb;
-  }
-  
-  .text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-  
-  .text-gray-600 {
-    color: #4b5563;
-  }
-  
-  .mb-8 {
-    margin-bottom: 2rem;
-  }
-  
-  .max-w-3xl {
-    max-width: 48rem;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .flex-col {
-    flex-direction: column;
-  }
-  
-  .sm\\:flex-row {
-    flex-direction: row;
-  }
-  
-  .gap-4 {
-    gap: 1rem;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .bg-blue-600 {
-    background-color: #2563eb;
-  }
-  
-  .hover\\:bg-blue-700:hover {
-    background-color: #1d4ed8;
-  }
-  
-  .text-white {
-    color: white;
-  }
-  
-  .font-semibold {
-    font-weight: 600;
-  }
-  
-  .py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-  
-  .px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  
-  .rounded-lg {
-    border-radius: 0.5rem;
-  }
-  
+  .from-blue-50 { background-color: #eff6ff; }
+  .to-indigo-100 { background-color: #e0e7ff; }
+  .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+  .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+  .max-w-7xl { max-width: 80rem; }
+  .mx-auto { margin-left: auto; margin-right: auto; }
+  .px-4 { padding-left: 1rem; padding-right: 1rem; }
+  .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .text-center { text-align: center; }
+  .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+  .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+  .font-bold { font-weight: 700; }
+  .font-semibold { font-weight: 600; }
+  .font-normal { font-weight: 400; }
+  .text-gray-900 { color: #111827; }
+  .text-gray-600 { color: #4b5563; }
+  .text-blue-600 { color: #2563eb; }
+  .mb-2 { margin-bottom: 0.5rem; }
+  .mb-4 { margin-bottom: 1rem; }
+  .mb-6 { margin-bottom: 1.5rem; }
+  .mb-8 { margin-bottom: 2rem; }
+  .mb-12 { margin-bottom: 3rem; }
+  .max-w-3xl { max-width: 48rem; }
+  .flex { display: flex; }
+  .flex-col { flex-direction: column; }
+  .sm\:flex-row { flex-direction: row; }
+  .gap-4 { gap: 1rem; }
+  .gap-8 { gap: 2rem; }
+  .justify-center { justify-content: center; }
+  .grid { display: grid; }
+  .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .bg-white { background-color: white; }
+  .bg-gray-50 { background-color: #f9fafb; }
+  .bg-blue-100 { background-color: #dbeafe; }
+  .bg-green-100 { background-color: #dcfce7; }
+  .bg-purple-100 { background-color: #f3e8ff; }
+  .rounded-full { border-radius: 9999px; }
+  .rounded-lg { border-radius: 0.5rem; }
+  .p-6 { padding: 1.5rem; }
+  .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+  .px-8 { padding-left: 2rem; padding-right: 2rem; }
+  .shadow-md { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
   .transition-colors {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
-  
-  .border {
-    border-width: 1px;
-  }
-  
-  .border-blue-600 {
-    border-color: #2563eb;
-  }
-  
-  .hover\\:bg-blue-50:hover {
-    background-color: #eff6ff;
-  }
-  
-  .py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-  
-  .bg-white {
-    background-color: white;
-  }
-  
-  .grid {
-    display: grid;
-  }
-  
-  .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  
-  .md\\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  
-  .gap-8 {
-    gap: 2rem;
-  }
-  
-  .bg-blue-100 {
-    background-color: #dbeafe;
-  }
-  
-  .w-16 {
-    width: 4rem;
-  }
-  
-  .h-16 {
-    height: 4rem;
-  }
-  
-  .rounded-full {
-    border-radius: 9999px;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .items-center {
-    align-items: center;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  
-  .mb-4 {
-    margin-bottom: 1rem;
-  }
-  
-  .w-8 {
-    width: 2rem;
-  }
-  
-  .h-8 {
-    height: 2rem;
-  }
-  
-  .bg-green-100 {
-    background-color: #dcfce7;
-  }
-  
-  .text-green-600 {
-    color: #16a34a;
-  }
-  
-  .bg-purple-100 {
-    background-color: #f3e8ff;
-  }
-  
-  .text-purple-600 {
-    color: #9333ea;
-  }
-  
+  .w-16 { width: 4rem; }
+  .h-16 { height: 4rem; }
+  .w-8 { width: 2rem; }
+  .h-8 { height: 2rem; }
+  .text-base { font-size: 1rem; line-height: 1.5rem; }
   @media (min-width: 768px) {
-    .md\\:text-6xl {
-      font-size: 3.75rem;
-      line-height: 1;
-    }
-    
-    .md\\:grid-cols-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-    
-    .sm\\:flex-row {
-      flex-direction: row;
-    }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+    .sm\:flex-row { flex-direction: row; }
   }
-</style> 
+</style>
