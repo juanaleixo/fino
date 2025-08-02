@@ -1,0 +1,33 @@
+{
+  "name": "fino",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Projeto web em Astro 4.x com foco em performance e SEO",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/ts-plugin": "^0.4.0",
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "prettier": "^3.0.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
